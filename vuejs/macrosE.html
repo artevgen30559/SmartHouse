@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SmartHouse</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	
+	<section class="macros-devices">
+		<div class="container">
+			<div class="device">
+				<div class="row align-items-center">
+					<div class="col-5">
+						<div class="room__devices-name">
+							<span>Термостат</span>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="trash">
+							<img src="imgs/trash.png">
+						</div>
+					</div>
+					<div class="col-5">
+						<div class="room__devices-status">
+							<div class="devices-status__switch">
+								<input type="checkbox" id="deviceId" class="switch__check">
+								<label for="deviceId" class="switch__slider"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="device">
+				<div class="row align-items-center">
+					<div class="col-5">
+						<div class="room__devices-name">
+							<span>Термостат</span>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="trash">
+							<img src="imgs/trash.png">
+						</div>
+					</div>
+					<div class="col-5">
+						<div class="room__devices-status">
+							<div class="devices-status__switch">
+								<input type="checkbox" id="deviceId" class="switch__check">
+								<label for="deviceId" class="switch__slider"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="add-device">
+				<div class="row align-items-center">
+					<div class="col-10">
+						<div class="add-device__caption">
+							<span>Добавить устройство</span>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="plus" style="text-align: right;">
+							<img src="imgs/plus-icon.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Add script -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/vue.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/smarthouse.js"></script>	
+</body>
+</html>

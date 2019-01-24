@@ -1,0 +1,330 @@
+/* Login Page */
+.auth-bg {
+	background: url('../imgs/bg_pattern.png') no-repeat center center;
+	background-color: #FA7268;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: -99999;
+}
+
+.auth {
+	padding-top: 8rem;
+}
+
+.auth form {
+	text-align: center;
+}
+
+.auth_logotype {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.auth_logotype img {
+	width: 100%;
+	max-width: 200px;
+}
+
+.auth input[type="text"] {
+	width: 100%;
+	height: 50px;
+	border: none;
+	border-radius: 100px;
+	padding: 1rem;
+	outline: none;
+	box-sizing: border-box;
+	margin-bottom: 2rem;
+}
+
+.auth_submit {
+	width: 100%;
+	max-width: 150px;
+	height: 50px;
+	border: none;
+	border-radius: 100px;
+	outline: none;
+	position: relative;
+	color: #FA7268;	
+}
+
+.auth_submit::after {
+	content: '';
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	border-radius: 100px;
+	bottom: 0px;
+	right: 0px;
+	z-index: -1;
+	background-color: red;
+	background-color: #FA7268;
+	transition: 0.3s ease-in-out;
+}
+
+.auth_submit:hover {
+	cursor: pointer;
+}
+
+.auth_submit:hover::after {
+	bottom: -10px;
+	right: -10px;	
+}
+
+@media screen and (min-width: 560px) {
+	.auth-bg {
+		background: url('../imgs/bg_pattern__big.png') no-repeat center center;
+		background-color: #FA7268;
+	}
+}
+/* Login Page */
+
+/* Rooms Page */
+.rooms-list {
+	margin-top: 2rem;
+}
+
+.room__name * {
+	font-size: 16px;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.room__preview_align {
+	text-align: right;
+}
+
+.room__preview {
+	display: inline-block;
+	max-width: 100%;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.rooms-list .room {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+
+.rooms-list .room:last-child {
+	border: none;
+}
+
+.rooms-list .room__preview img {
+	width: 150px;
+}
+
+.favorite__caption {
+	padding: 2rem 0;
+	background-color: #1A36DA;
+	text-align: center;
+}
+
+.favorite__caption * {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.favorite-none {
+	text-align: center;
+	margin-top: 1rem;
+	color: #fff;
+}
+
+.favorite__room {
+	margin-top: 2rem;
+}
+
+/* Room Devices */
+.device {
+	padding-top: 2rem;
+}
+
+.room__devices-name * {
+	color: #fff;
+	font-weight: 700;
+}
+
+.room__devices-status {
+	text-align: right;
+}
+
+.devices-status__count input[type="text"] {
+	border-radius: 100px;
+	border: none;
+	outline: none;
+	height: 35px;
+	width: 100%;
+	max-width: 80px;
+	text-align: center;
+	margin-left: 1rem;
+}
+
+.devices-status__count .minus,
+.devices-status__count .plus {
+	display: inline-block;
+	opacity: 0.7;
+	cursor: pointer;
+	outline: none;
+	user-select: none;
+}
+
+.devices-status__count .minus:hover,
+.devices-status__count .plus:hover {
+	opacity: 1;
+}
+
+.device .trash {
+	text-align: center;
+}
+
+
+.device .trash img {
+	width: 20px;
+}
+
+.add-device {
+	cursor: pointer;
+	margin-top: 2rem;
+	border-top: 2px solid rgba(255, 255, 255, 0.5);
+	padding-top: 2rem;
+}
+
+.add-device span {
+	color: #fff;
+}
+
+.room__devices-status {
+	height: 35px;
+}
+
+.switch__slider {
+	width: 100%;
+	max-width: 80px;
+	height: 35px;
+	border-radius: 500px;
+	background-color: #fff;
+	position: relative;
+	cursor: pointer;
+}
+
+.switch__slider:before {
+	content: '';
+	position: absolute;
+	display: block;
+	left: 0;
+	border-radius: 100%;
+	width: 35px;
+	height: 35px;
+	border: 5px solid #fff;
+	background-color: #1A36DA;
+	transition: 0.3s cubic-bezier(0.2, 1, 0.7, 1.15);
+}
+
+.switch__check {
+	opacity: 0;
+	display: none;
+}
+
+.switch__check:checked + .switch__slider:before {
+	transform: translateX(44px);
+	background-color: #fff;
+	border-color: #1A36DA;
+}
+
+.switch__check:checked + .switch__slider {
+	background-color: #1A36DA;
+}
+/* Room Devices */
+
+/* Macros */
+.macros {
+	padding: 2rem 0;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.macros:last-child {
+	border-bottom: none;
+}
+
+.macros__name {
+	color: #fff;
+	font-size: 16px;
+}
+
+.macros__name p {
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.macros__name span {
+	opacity: 0.6;
+}
+
+.macros__play,
+.macros__edit {
+	text-align: center;
+	cursor: pointer;
+}
+
+.macros__play span,
+.macros__edit span {
+	padding-top: 10px;
+	color: #fff;
+	display: block;
+}
+
+.new-macros {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.new-macros button {
+	border: none;
+	border-radius: 500px;
+	background-color: #1A36DA;
+	padding: 0.5rem 1.5rem;
+	color: #fff;
+	margin-bottom: 2rem;
+	cursor: pointer;
+}
+
+.macros select,
+.macros input {
+	max-width: 100%;
+}
+
+.macros input {
+	border: none;
+	width: 200px;
+	border-radius: 500px;
+	height: 35px;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.macros select {
+	border: none;
+	width: 100%;
+	height: 35px;
+}
+
+.new-macros__name {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
