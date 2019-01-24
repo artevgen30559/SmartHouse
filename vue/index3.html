@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Smart house</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logotype">
+				<p>Smart <span>house</span></p>
+			</div>
+		</div>
+	</header>
+	<div class="nav-menu">
+		<div class="container">
+			<ul>
+				<li class="active"><a href="#">Главная</a></li>
+				<li><a href="#">Макросы</a></li>
+				<li><a href="#">Все устройства</a></li>
+				<li><a href="#">Выход</a></li>
+			</ul>
+		</div>
+	</div>
+	<section class="macros">
+		<div class="container">
+			<div class="macro">
+				<div class="macro__name">Название макроса</div>
+				<div class="macro__start">Запуск</div>
+			</div>
+			<div class="new-macro">
+				<div class="new-macro__macro">
+					<div class="info">
+						<input type="text" class="new-macro__name" placeholder="Введите название">
+						<select class="new-macro__new-device">
+							<option value="1" class="new-device__name">Выбрать устройство</option>
+							<option value="2" class="new-device__name">Устройство 1</option>
+						</select>
+						<select class="new-macro__new-value">
+							<option value="1" class="new-value__name">Выбрать значение</option>
+							<option value="2" class="new-value__name">Значение 1</option>
+						</select>
+						<div class="more-device">Еще</div>
+					</div>
+					<button class="new-macro-create">Готово</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<button class="add-macro">Добавить макрос</button>
+</body>
+<script src="js/index.js"></script>
+</html>
