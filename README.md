@@ -1,1 +1,1 @@
-# SmartHouse test
+# SmartHouse
