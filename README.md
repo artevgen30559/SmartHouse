@@ -1,1 +1,1 @@
-# SmartHouse
+# SmartHouse description
